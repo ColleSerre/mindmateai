@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+  padding: 50px;
+}
+
+section.grid-item {
+  text-align: left;
+  padding: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section.full-width {
+  grid-column: 1 / -1;
+}
+
+section.half-width {
+  grid-column: span 1;
+}
+
+section#hero {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 100px 0;
+}
+
+section#hero h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+}
+
+section#hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #1a1aff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #000;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+}
+
+form input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+}
+
+form button[type="submit"] {
+  background-color: #1a1aff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #000;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
